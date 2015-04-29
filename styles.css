@@ -45,8 +45,12 @@ nav li:hover {
     display: none; } }
 
 .side {
-  width: 30%;
-  float: left; }
+  padding: 1rem;
+  width: 20%;
+  float: left;
+  border: 3px solid #000;
+  border-radius: 5px;
+  margin-right: 5%; }
 
 .main {
   width: 60%;
