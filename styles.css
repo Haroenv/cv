@@ -1,15 +1,24 @@
 @media screen {
   body {
-    background-color: #f2f2f2;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: 300; } }
+    background-color: #F5F5DC; } }
 @media print {
   body {
-    color: black;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: 300; } }
+    background-color: #FFF; } }
+body {
+  color: black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto; }
+
 a {
-  color: #000; }
+  color: #000;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none; }
 
 a:hover {
   color: #aaa; }
