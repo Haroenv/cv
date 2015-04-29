@@ -4,7 +4,8 @@
     margin: 0 2em; } }
 @media print {
   body {
-    background-color: #FFF; } }
+    background-color: #FFF;
+    font-size: 8pt; } }
 body {
   color: black;
   font-family: Helvetica, Arial, sans-serif;
@@ -43,6 +44,9 @@ nav li:hover {
 @media print {
   nav {
     display: none; } }
+
+dd {
+  margin: 0.3em 0 0.3em 1em; }
 
 .side {
   padding: 1em;
