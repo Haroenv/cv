@@ -2,7 +2,7 @@
 <!--
 	CV for Haroen Viaene
 	@author Haroen Viaene
- -->
+-->
 <html lang="en">
 <head>
 	<title> Haroen Viaene </title>
@@ -14,18 +14,71 @@
 	<meta name="mobile-web-app-capable" content="yes">
 </head>
 <body>
-<section data-view="nl">
-	<section class="info">
-		<dl>
-			<dt>Naam:</dt>
-			<dd>Haroen Viaene</dd>
-			<dt>Locatie:</dt>
-			<dd>Brugge/Gent</dd>
-		</dl>
+	<header>
+		<h1>Haroen Viaene</h1>
+		<nav id="nav" class="site__navigation" id="navigation"></nav>
+	</header>
+	<section data-view="nl">
+		<section class="info">
+			<dl>
+				<dt>Naam:</dt>
+				<dd>Haroen Viaene</dd>
+				<dt>Locatie:</dt>
+				<dd>Brugge/Gent</dd>
+			</dl>
+		</section>
+		<section class="experience">
+			<dl>
+				<dt>Euro Space Center</dt>
+				<dd>Animator, begeleider, gids</dd>
+			</dl>
+		</section>
 	</section>
-	<section class="experience">
-
+	<section data-view="fr">
+		<section class="info">
+			<dl>
+				<dt>Nom:</dt>
+				<dd>Haroen Viaene</dd>
+				<dt>Location:</dt>
+				<dd>Bruges/Gand</dd>
+			</dl>
+		</section>
+		<section class="experience">
+			<dl>
+				<dt>Euro Space Center</dt>
+				<dd>Animateur, accompagnateur, guide</dd>
+			</dl>
+		</section>
 	</section>
-</section>
+	<section data-view="en">
+		<section class="info">
+			<dl>
+				<dt>Name:</dt>
+				<dd>Haroen Viaene</dd>
+				<dt>Location:</dt>
+				<dd>Bruges/Ghent</dd>
+			</dl>
+		</section>
+		<section class="experience">
+			<dl>
+				<dt>Euro Space Center</dt>
+				<dd>Animator, guide</dd>
+			</dl>
+		</section>
+	</section>
+	<script type="text/javascript" src="https://raw.githubusercontent.com/kevingimbel/viewSwitcher/master/src/viewswitcher.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			View.initActive('home');
+			var nav = document.querySelector('#nav');
+			nav.innerHTML = View.getHtmlMenu('nav__item');
+			nav.addEventListener('click', function(event) {
+				event.preventDefault();
+				// viva la regex!
+				var url = event.target.href.match(/#[a-zA-Z0-9]+/)[0].toString().replace('#', '');
+				View.setActive(url);
+			});
+		});
+	</script>
 </body>
 </html>
