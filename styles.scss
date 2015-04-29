@@ -1,7 +1,17 @@
-body {
-	color: black;
-	font-family: Helvetica, Arial, sans-serif;
-	font-weight: 300;
+@media screen {
+	body {
+		background-color: #f2f2f2;
+		font-family: Helvetica, Arial, sans-serif;
+		font-weight: 300;
+	}
+}
+
+@media print {
+	body {
+		color: black;
+		font-family: Helvetica, Arial, sans-serif;
+		font-weight: 300;
+	}
 }
 
 a {
@@ -36,8 +46,11 @@ nav {
 		}
 	}
 }
-
+.side {
+	width: 30%;
+	float: left;
+}
 .main {
-	width: 50%;
+	width: 60%;
 	float: left;
 }
