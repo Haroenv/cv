@@ -16,7 +16,8 @@ body {
   hyphens: auto; }
 
 h2 {
-  color: #722F37; }
+  color: #722F37;
+  border-bottom: 1px solid #722F37; }
 
 a {
   color: #000;
@@ -78,5 +79,8 @@ dd {
   .main dl {
     float: left;
     width: 100%; }
+
+.accent {
+  color: #722F37; }
 
 /*# sourceMappingURL=styles.css.map */
