@@ -18,7 +18,8 @@ a {
   -webkit-hyphens: none;
   -moz-hyphens: none;
   -ms-hyphens: none;
-  hyphens: none; }
+  hyphens: none;
+  word-break: break-all; }
 
 a:hover {
   color: #aaa; }
