@@ -54,14 +54,14 @@ dd {
 
 .side {
   padding: 1em;
-  width: 15%;
+  width: 20%;
   float: left;
   border: 3px solid #722F37;
   border-radius: 5px;
   margin-right: 5%; }
 
 .main {
-  width: 75%;
+  width: 70%;
   float: left; }
   .main dt {
     clear: left;
