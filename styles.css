@@ -39,6 +39,9 @@ nav li:hover {
   background-color: #ccc; }
   nav li:hover a {
     color: #000; }
+@media print {
+  nav {
+    display: none; } }
 
 .side {
   width: 30%;

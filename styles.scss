@@ -56,6 +56,9 @@ nav {
 			color: #000;
 		}
 	}
+	@media print {
+		display: none;
+	}
 }
 .side {
 	width: 30%;
