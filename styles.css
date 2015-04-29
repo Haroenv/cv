@@ -1,6 +1,7 @@
 @media screen {
   body {
-    background-color: #F5F5DC; } }
+    background-color: #F5F5DC;
+    margin: 0 2rem; } }
 @media print {
   body {
     background-color: #FFF; } }
