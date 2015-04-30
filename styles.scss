@@ -10,6 +10,10 @@ $accent: #7F1734;
 		background-color: $bg-colour;
 		margin: 0 2em;
 	}
+
+	.main {
+		border-bottom: 1px dashed $accent;
+	}
 }
 
 @media print {
