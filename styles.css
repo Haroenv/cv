@@ -43,9 +43,9 @@ nav li:focus {
   background-color: #aa1f46; }
   nav li:hover a,
   nav li:focus a {
-    color: #FFF; }
+    color: #F5F5DC; }
 nav a {
-  color: #FFF;
+  color: #F5F5DC;
   text-decoration: none;
   padding: 1em 0.4em; }
 @media print {
@@ -93,6 +93,6 @@ dd {
     border-bottom: 1px solid #7F1734; } }
 @media print {
   .wrapper {
-    page-break-after: alway; } }
+    page-break-after: always; } }
 
 /*# sourceMappingURL=styles.css.map */
