@@ -37,16 +37,14 @@ nav li {
   border-radius: 2px;
   padding: 0.1em;
   margin: 0 0.6em; }
-  nav li a {
-    color: #FFF;
-    text-decoration: none;
-    padding: 1em 0.4em; }
 nav li:hover {
   background-color: #aa1f46; }
   nav li:hover a {
-    color: #FFF;
-    text-decoration: none;
-    padding: 1em 0.4em; }
+    color: #FFF; }
+nav a {
+  color: #FFF;
+  text-decoration: none;
+  padding: 1em 0.4em; }
 @media print {
   nav {
     display: none; } }

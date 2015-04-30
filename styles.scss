@@ -55,13 +55,6 @@ nav {
 		border-radius: 2px;
 		padding: 0.1em;
 		margin: 0 0.6em;
-
-		a {
-			color: $inverse;
-			text-decoration: none;
-			padding: 1em 0.4em;
-		}
-
 	}
 
 	li:hover {
@@ -69,13 +62,15 @@ nav {
 
 		a {
 			color: $inverse;
-			text-decoration: none;
-			padding: 1em 0.4em;
 		}
 
 	}
 
-
+	a {
+		color: $inverse;
+		text-decoration: none;
+		padding: 1em 0.4em;
+	}
 
 	@media print {
 		display: none;
