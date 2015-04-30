@@ -43,7 +43,8 @@ a {
 	word-break: break-all;
 }
 
-a:hover {
+a:hover,
+a:focus {
 	color: $alternative;
 }
 
@@ -57,7 +58,8 @@ nav {
 		margin: 0 0.6em;
 	}
 
-	li:hover {
+	li:hover,
+	li:focus {
 		background-color: $alternative;
 
 		a {

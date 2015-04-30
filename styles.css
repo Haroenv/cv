@@ -27,7 +27,8 @@ a {
   hyphens: none;
   word-break: break-all; }
 
-a:hover {
+a:hover,
+a:focus {
   color: #aa1f46; }
 
 nav li {
@@ -37,9 +38,11 @@ nav li {
   border-radius: 2px;
   padding: 0.1em;
   margin: 0 0.6em; }
-nav li:hover {
+nav li:hover,
+nav li:focus {
   background-color: #aa1f46; }
-  nav li:hover a {
+  nav li:hover a,
+  nav li:focus a {
     color: #FFF; }
 nav a {
   color: #FFF;
