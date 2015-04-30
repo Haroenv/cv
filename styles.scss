@@ -133,3 +133,9 @@ dd {
 		border-bottom: 1px solid $accent;
 	}
 }
+
+@media print {
+	.wrapper {
+		page-break-after: always;
+	}
+}
