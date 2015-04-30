@@ -7,7 +7,7 @@
     background-color: #FFF;
     font-size: 8pt; } }
 body {
-  color: black;
+  color: #000;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 300;
   -webkit-hyphens: auto;
@@ -16,8 +16,8 @@ body {
   hyphens: auto; }
 
 h2 {
-  color: #722F37;
-  border-bottom: 1px solid #722F37; }
+  color: #7F1734;
+  border-bottom: 1px solid #7F1734; }
 
 a {
   color: #000;
@@ -28,12 +28,12 @@ a {
   word-break: break-all; }
 
 a:hover {
-  color: #aaa; }
+  color: #aa1f46; }
 
 nav li {
   display: inline-block;
   float: right;
-  background-color: #722F37;
+  background-color: #7F1734;
   border-radius: 2px;
   padding: 0.1em;
   margin: 0 0.6em; }
@@ -42,9 +42,11 @@ nav li {
     text-decoration: none;
     padding: 1em 0.4em; }
 nav li:hover {
-  background-color: #aaa; }
+  background-color: #aa1f46; }
   nav li:hover a {
-    color: #000; }
+    color: #FFF;
+    text-decoration: none;
+    padding: 1em 0.4em; }
 @media print {
   nav {
     display: none; } }
@@ -56,7 +58,7 @@ dd {
   padding: 0.5em;
   width: 19%;
   float: left;
-  border: 3px solid #722F37;
+  border: 3px solid #7F1734;
   border-radius: 5px;
   margin-right: 2%; }
 
@@ -74,13 +76,11 @@ dd {
     margin: 0.2em; }
     .main dd p {
       margin: 0; }
-  .main dd::nth-child(2) {
-    margin-left: 20%; }
   .main dl {
     float: left;
     width: 100%; }
 
 .accent {
-  color: #722F37; }
+  color: #7F1734; }
 
 /*# sourceMappingURL=styles.css.map */

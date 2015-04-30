@@ -2,8 +2,8 @@ $bg-colour: #F5F5DC;
 $print-bg: #FFF;
 $foreground: #000;
 $inverse: #FFF;
-$alternative: #aaa;
-$accent: #722F37;
+$alternative: #aa1f46;
+$accent: #7F1734;
 
 @media screen {
 	body {
@@ -20,7 +20,7 @@ $accent: #722F37;
 }
 
 body {
-	color: black;
+	color: $foreground;
 	font-family: Helvetica, Arial, sans-serif;
 	font-weight: 300;
 	-webkit-hyphens: auto;
@@ -61,15 +61,22 @@ nav {
 			text-decoration: none;
 			padding: 1em 0.4em;
 		}
+
 	}
 
 	li:hover {
 		background-color: $alternative;
 
 		a {
-			color: $foreground;
+			color: $inverse;
+			text-decoration: none;
+			padding: 1em 0.4em;
 		}
+
 	}
+
+
+
 	@media print {
 		display: none;
 	}
@@ -91,27 +98,24 @@ dd {
 .main {
 	width: 70%;
 	float: left;
+
 	dt {
 		clear: left;
 		float: left;
 		width: 20%;
-		// background-color: #0F0;
 		margin-right: 1em;
-		// margin-bottom: 1em;
-		// margin-top: 1em;
 	}
+
 	dd {
 		float: left;
 		width: 75%;
 		margin: 0.2em;
-		// background-color: #00F;
+
 		p {
 			margin: 0;
 		}
 	}
-	dd::nth-child(2) {
-		margin-left: 20%;
-	}
+
 	dl {
 		float: left;
 		width: 100%;
