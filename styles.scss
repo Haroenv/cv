@@ -122,3 +122,14 @@ dd {
 .accent {
 	color: $accent;
 }
+
+.wrapper {
+	padding-top: 1em;
+	float: left;
+}
+
+@media screen {
+	.wrapper {
+		border-bottom: 1px solid $accent;
+	}
+}
