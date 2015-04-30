@@ -329,6 +329,9 @@
 	<script type="text/javascript" src="https://raw.githubusercontent.com/kevingimbel/viewSwitcher/master/src/viewswitcher.js"></script>
 	<script>
 		document.addEventListener('DOMContentLoaded', function() {
+			View.setOptions({
+				changeTitle: false
+			});
 			View.initActive('nl');
 			var nav = document.querySelector('#nav');
 			nav.innerHTML = View.getHtmlMenu('nav__item');
