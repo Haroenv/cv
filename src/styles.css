@@ -18,6 +18,8 @@ body {
 h2 {
   color: #7F1734;
   border-bottom: 1px solid #7F1734; }
+  h2 a {
+    text-decoration: overline; }
 
 a {
   color: #000;
@@ -26,10 +28,8 @@ a {
   -ms-hyphens: none;
   hyphens: none;
   word-break: break-all; }
-
-a:hover,
-a:focus {
-  color: #aa1f46; }
+  a:hover, a:focus {
+    color: #aa1f46; }
 
 nav li {
   display: inline-block;
@@ -38,14 +38,14 @@ nav li {
   border-radius: 2px;
   padding: 0.1em;
   margin: 0 0.6em; }
-nav li:hover,
-nav li:focus {
-  background-color: #aa1f46; }
-  nav li:hover a,
-  nav li:focus a {
-    color: #F5F5DC; }
+  nav li:hover, nav li:focus {
+    background-color: #aa1f46; }
+    nav li:hover a:focus,
+    nav li:hover a:hover, nav li:focus a:focus,
+    nav li:focus a:hover {
+      color: #F5F5DC; }
 nav a {
-  color: #F5F5DC;
+  color: #F5F5DC !important;
   text-decoration: none;
   padding: 1em 0.4em; }
 @media print {
@@ -53,7 +53,11 @@ nav a {
     display: none; } }
 
 dd {
-  margin: 0.3em 0 0.3em 1em; }
+  margin: .3em 0 .3em 1em; }
+
+dt {
+  margin: .3em 0 .3em 0;
+  font-weight: 500; }
 
 .side {
   padding: 0.5em;
@@ -62,6 +66,24 @@ dd {
   border: 3px solid #7F1734;
   border-radius: 5px;
   margin-right: 2%; }
+  @media screen and (max-width: 44.7em) {
+    .side {
+      width: 90%;
+      margin: O auto; } }
+  @media screen and (max-width: 44.7em) and (min-width: 23em) {
+    .side dt {
+      clear: left;
+      float: left;
+      width: 20%;
+      margin-right: 1em; }
+    .side dd {
+      float: left;
+      width: 60%;
+      margin: 0.2em; } }
+
+  @media screen and (max-width: 52em) {
+    .side dd {
+      margin-left: 0; } }
 
 .main {
   width: 70%;
@@ -80,6 +102,14 @@ dd {
   .main dl {
     float: left;
     width: 100%; }
+  @media screen and (max-width: 44.7em) {
+    .main {
+      width: 100%; } }
+  @media screen and (max-width: 35em) {
+    .main dt {
+      width: 100%; }
+      .main dt:not(:nth-of-type(1)) {
+        margin-top: 1rem; } }
 
 .accent {
   color: #7F1734; }
