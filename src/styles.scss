@@ -1,8 +1,10 @@
-$bg-colour: #F5F5DC;
+---
+#comment for jekyll
+---
+
+$light: #fff9f4;
 $print-bg: #FFF;
 $foreground: #000;
-$inverse: #F5F5DC;
-$alternative: #aa1f46;
 $accent: #7F1734;
 $break-large: 44.7em;
 $break-side: 52em;
@@ -11,7 +13,7 @@ $break-side-small: 23em;
 
 @media screen {
 	body {
-		background-color: $bg-colour;
+		background-color: $light;
 		margin: 0 2em;
 	}
 }
@@ -56,7 +58,7 @@ a {
 
 	&:hover,
 	&:focus {
-		color: $alternative;
+		color: lighten($accent,10%);
 	}
 }
 
@@ -71,17 +73,17 @@ nav {
 
 		&:hover,
 		&:focus {
-			background-color: $alternative;
+			background-color: lighten($accent,10%);
 
 			a:focus,
 			a:hover {
-				color: $inverse;
+				color: $light;
 			}
 		}
 	}
 
 	a {
-		color: $inverse !important;
+		color: $light !important;
 		text-decoration: none;
 		padding: 1em 0.4em;
 	}
