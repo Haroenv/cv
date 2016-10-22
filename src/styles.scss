@@ -45,6 +45,11 @@ body {
 	hyphens: auto;
 }
 
+img {
+	max-width: 100%;
+	display: block;
+}
+
 h1 a {
 	text-decoration: none;
 	&:hover {
@@ -132,6 +137,7 @@ dt {
 
 .side {
 	padding: 0.5em;
+	padding-bottom: 0;
 	width: 19%;
 	float: left;
 	border: 3px solid $accent;
