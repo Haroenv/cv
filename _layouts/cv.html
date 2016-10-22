@@ -24,17 +24,12 @@
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       View.setOptions({
-        changeTitle: false
+        changeTitle: false,
+        setupEvents: true
       });
       View.initActive('nl');
       var nav = document.querySelector('#nav');
       nav.innerHTML = View.getHtmlMenu('nav__item');
-      nav.addEventListener('click', function(event) {
-        event.preventDefault();
-        // viva la regex!
-        var url = event.target.href.match(/#[a-zA-Z0-9]+/)[0].toString().replace('#', '');
-        View.setActive(url);
-      });
     });
   </script>
 </body>
