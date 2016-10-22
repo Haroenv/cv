@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+  CV for Haroen Viaene
+  @author Haroen Viaene
+-->
+<html lang="en">
+{% include head.html %}
+<body>
+  <header>
+    <h1><a href="https://haroen.me">Haroen <span class="accent">Viaene</span></a></h1>
+    <nav id="nav" class="site__navigation" id="navigation">
+      <ul>
+        <li><a href="#nl">nl</a></li>
+        <li><a href="#fr">fr</a></li>
+        <li><a href="#en">en</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    {{content}}
+  </main>
+  <!-- http://kevingimbel.com/viewSwitcher/ -->
+  <script src="src/viewswitcher.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      View.setOptions({
+        changeTitle: false
+      });
+      View.initActive('nl');
+      var nav = document.querySelector('#nav');
+      nav.innerHTML = View.getHtmlMenu('nav__item');
+      nav.addEventListener('click', function(event) {
+        event.preventDefault();
+        // viva la regex!
+        var url = event.target.href.match(/#[a-zA-Z0-9]+/)[0].toString().replace('#', '');
+        View.setActive(url);
+      });
+    });
+  </script>
+</body>
+</html>

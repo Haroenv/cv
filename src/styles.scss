@@ -25,6 +25,14 @@ $break-side-small: 23em;
 	}
 }
 
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	box-sizing: border-box;
+}
+
 body {
 	color: $foreground;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -113,8 +121,8 @@ dt {
 	margin-right: 2%;
 
 	@media screen and (max-width: $break-large) {
-		width: 90%;
-		margin: O auto;
+		width: 100%;
+		margin: 1em auto;
 
 		@media screen and (min-width: $break-side-small) {
 			dt {
