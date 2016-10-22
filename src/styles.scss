@@ -6,6 +6,7 @@ $print-bg: #FFF;
 $foreground: #000;
 $accent: #7F1734;
 $break-large: 44.7em;
+$break-side-large: 56.25em;
 $break-side: 52em;
 $break-small: 35em;
 $break-side-small: 25em;
@@ -157,6 +158,9 @@ dt {
 	width: 19%;
 	float: left;
 	margin-right: 2%;
+	@media screen and (max-width: $break-side-large) {
+		width: 25%;
+	}
 	@media screen and (max-width: $break-large) {
 		width: 100%;
 		margin: 1em auto;
@@ -183,6 +187,9 @@ dt {
 	dl {
 		float: left;
 		width: 100%;
+	}
+	@media screen and (max-width: $break-side-large) {
+		width: 73%;
 	}
 	@media screen and (max-width: $break-large) {
 		width: 100%;
