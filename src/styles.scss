@@ -219,3 +219,35 @@ dt {
 		page-break-after: always;
 	}
 }
+
+
+.konami {
+	animation: {
+		name: konami;
+		duration: 10s;
+		timing-function: ease;
+		iteration-count: infinite;
+	}
+}
+
+@keyframes konami {
+	0%, 100% {
+		background-color: #ff7f7f;
+	}
+
+	20% {
+		background-color: #ffb27f;
+	}
+
+	40% {
+		background-color: #ffe97f;
+	}
+
+	60% {
+		background-color: #7fff8e;
+	}
+
+	80% {
+		background-color: #7fc9ff;
+	}
+}

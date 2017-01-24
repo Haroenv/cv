@@ -35,5 +35,23 @@ layout: compress
       nav.innerHTML = View.getHtmlMenu('nav__item');
     });
   </script>
+  <script>{% include konami.min.js %}</script>
+  <script>
+    function prankPhoto() {
+      if (!NodeList.prototype.forEach) {
+        NodeList.prototype.forEach = Array.prototype.forEach;
+      }
+      var headshots = document.querySelectorAll('.headshot');
+      headshots.forEach(function(el) {
+        el.alt = 'old school picture';
+        el.src = 'src/konami.png';
+      });
+    }
+
+    Konami(function() {
+      prankPhoto();
+      document.body.className = 'konami';
+    });
+  </script>
 </body>
 </html>
