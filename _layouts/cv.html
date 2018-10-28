@@ -11,20 +11,20 @@ layout: compress
 <body>
   <header>
     <h1><a href="https://haroen.me">Haroen <span class="accent">Viaene</span></a></h1>
-    <nav id="nav" class="site__navigation" id="navigation">
+    <!-- <nav id="nav" class="site__navigation" id="navigation">
       <ul>
         <li><a href="#nl">nl</a></li>
         <li><a href="#fr">fr</a></li>
         <li><a href="#en">en</a></li>
       </ul>
-    </nav>
+    </nav> -->
   </header>
   <main>
     {{content}}
   </main>
   <!-- http://kevingimbel.com/viewSwitcher/ -->
-  <script>{% include viewswitcher.min.js %}</script>
-  <script>
+  <!-- <script>{% include viewswitcher.min.js %}</script> -->
+  <!-- <script>
     document.addEventListener('DOMContentLoaded', function() {
       View.setOptions({
         changeTitle: false,
@@ -34,7 +34,7 @@ layout: compress
       var nav = document.querySelector('#nav');
       nav.innerHTML = View.getHtmlMenu('nav__item');
     });
-  </script>
+  </script> -->
   <script>{% include konami.min.js %}</script>
   <script>
     function prankPhoto() {
